@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Online Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="welcomeMessage()">
+
+<header>
+  <h1>Cozy Corner Shop</h1>
+</header>
+<section id="special-offer">
+  <h2>Special Offer!</h2>
+  <p>Get 10% off on your first order!</p>
+  <button onclick="changeOffer()">Click Me</button>
+</section>
+<main class="product-grid">
+  <div class="product-card">
+    <img src="images.jpg" alt="Handmade Mug">
+    <h2>Handmade Mug</h2>
+    <p>₹250</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images (1).jpg" alt="Printed T-shirt">
+    <h2>Printed T-Shirt</h2>
+    <p>₹500</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images (2).jpg" alt="Custom Notebook">
+    <h2>Custom Notebook</h2>
+    <p>₹150</p>
+    <button>Add to Cart</button>
+  </div>
+</main>
+<section class="checkout">
+  <h2>Checkout</h2>
+  <form id="checkoutForm" onsubmit="return validateForm()">
+    <label>Name: <input type="text" id="name" name="name"></label><br><br>
+    <label>Email: <input type="email" id="email" name="email"></label><br><br>
+    <label>Address: <input type="text" id="address" name="address"></label><br><br>
+    <button type="submit">Place Order</button>
+  </form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
+
